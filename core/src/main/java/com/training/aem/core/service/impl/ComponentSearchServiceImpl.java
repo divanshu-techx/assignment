@@ -28,7 +28,7 @@ import java.util.stream.Collectors;
 public class ComponentSearchServiceImpl implements ComponentSearchService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ComponentSearchServiceImpl.class);
-    public static final String SAMPLE_SERVICE = "sampleService";
+    public static final String SAMPLE_SERVICE = "systemUser";
 
     @Reference
     private ResourceResolverFactory resourceResolverFactory;

@@ -16,7 +16,7 @@ import java.io.IOException;
 
 @Component(service = { Servlet.class })
 @SlingServletResourceTypes(
-        resourceTypes="training-project/components/page",
+        resourceTypes="training-project/components/button",
         methods= HttpConstants.METHOD_GET,
         selectors = "compSearch",
         extensions="json")

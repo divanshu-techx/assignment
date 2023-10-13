@@ -4,7 +4,6 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.sling.api.resource.LoginException;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.api.resource.ResourceResolverFactory;
-import org.osgi.service.log.Logger;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -20,11 +19,11 @@ public final class ResourceResolverUtils {
                 authMap.put(ResourceResolverFactory.SUBSERVICE, subService);
                 resourceResolver = resolverFactory.getServiceResourceResolver(authMap);
             } catch (LoginException e) {
-                Logger logger = null;
-                if (logger.isErrorEnabled()) {
-                    logger.error("Utils :: getResolver :: Login Exception while getting the resource resolver "
-                            + "from resourceResolverFactory");
-                }
+             //   Logger logger = null;
+//                if (logger.isErrorEnabled()) {
+//                    logger.error("Utils :: getResolver :: Login Exception while getting the resource resolver "
+//                            + "from resourceResolverFactory");
+//                }
             }
         }
         return resourceResolver;
